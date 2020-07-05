@@ -26,48 +26,55 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background-color: #f6f6f6;
 }
 
-.header {
-    max-width: 1920px;
+.header{
     background-image: url('../images/header_background.jpg');
-    max-height: 1079px;
-    .header-menu {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 150px; //!!!!!!!!!!!!!!!!!
+    .header-container {
+        display: block;
+        margin: 0 auto;
+        max-width: 1920px;
+        
+        max-height: 1079px;
+        .header-menu {
+            display: flex;
+            max-width: 1680px;
+            justify-content: space-between;
+            margin-bottom: 150px; //!!!!!!!!!!!!!!!!!
+        }
+
+
+        .content__type{
+            text-align: center;
+            color: #fefefe;
+            font-family: 'Catamaran Black';
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .content__name{
+            text-align: center;
+            opacity: 0.4;
+            color: #fefefe;
+            font-family: "Catamaran Black";
+            font-size: 250px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: -0.94px;
+        }
     }
-    .content-image__mountain > img{
+    .header-image__mountain > img{
         width: 100%;
         z-index: 4;
         margin-top: -30px;
     }
 
-    .content-image__border > img{
+    .header-image__border > img{
         position: absolute;
         bottom: 0;
         right: 0;
         // width: 100%;
         z-index: 5;
         margin-top: -30px;
-    }
-
-    .content__type{
-        text-align: center;
-        color: #fefefe;
-        font-family: 'Catamaran Black';
-        font-size: 30px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-    }
-
-    .content__name{
-        text-align: center;
-        opacity: 0.4;
-        color: #fefefe;
-        font-family: "Catamaran Black";
-        font-size: 250px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: -0.94px;
     }
 }
