@@ -1,0 +1,21 @@
+<!-- BASIC STRUCTURE -->
+    # |-/builder
+    # |--/node_modules
+    # |--Gulpfile.js
+# |-/src
+# |--/assets
+# |---/styles
+# |---/images
+    # |----/design
+    # |----/content
+# |---/scripts
+    # |----/local
+    # |----/vendor
+    # |--/templates
+    # |---/pages
+    # |---/blocks
+# |-/built
+# |--/js
+# |--/css
+# |--/img
+# |--*.html

@@ -1,0 +1,134 @@
+/*Default Styles Reset*/
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* FONTS */
+/* Custom SCSS */
+.body {
+  background-color: #f6f6f6;
+}
+
+.header {
+  max-width: 1920px;
+  background-image: url("../images/header_background.jpg");
+  max-height: 1079px;
+}
+
+.header .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.header .content-image__mountain > img {
+  width: 100%;
+  z-index: 4;
+  margin-top: -30px;
+}
+
+.header .content-image__border > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin-top: -30px;
+}
+
+.header .content__type {
+  text-align: center;
+  color: #fefefe;
+  font-family: 'Catamaran Black';
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.header .content__name {
+  text-align: center;
+  opacity: 0.4;
+  color: #fefefe;
+  font-family: "Catamaran Black";
+  font-size: 250px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.94px;
+}
+/*# sourceMappingURL=styles.css.map */
