@@ -97,8 +97,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         display: block;
         margin: 0 auto;
         max-width: 1920px;
-        max-height: 1079px;
-        padding-top: 22.8rem;
+        // max-height: 1079px;
+        padding-top: 16.8rem;
 
         .cotent{
             max-width: 1260px;
@@ -131,7 +131,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
     .header-image__mountain {
-        position: relative;   
+        position: absolute;
+        bottom: 0;
+        width: 100%;   
         > img{
             width: 100%;
             z-index: 10;
@@ -151,8 +153,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         top: 50%;
         left: 10%;
         width: 70rem;
-        position: absolute;
+        position: relative;
         z-index: 10;
+        padding: 10rem 0 38rem 0;
         .content__text{
             color: #fefefe;
             font-family: Muli;
