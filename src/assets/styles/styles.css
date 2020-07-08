@@ -204,7 +204,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .header-image__mountain {
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
+  left: 0;
   width: 100%;
 }
 
@@ -219,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   height: 75rem;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 .header .content__info {
@@ -299,7 +300,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header .header__menu {
     position: fixed;
-    top: -100%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     left: 0;
     width: 100%;
     height: 100%;
@@ -334,7 +336,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .header__menu.active {
-  top: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .header__list {
@@ -357,6 +360,142 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 90px;
   letter-spacing: 0.16px;
+}
+
+.offer {
+  background-color: #f6f6f6;
+  padding-bottom: 2.4rem;
+}
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.offer-body {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 16rem 0;
+}
+
+.offer-title {
+  text-align: center;
+  padding: 9rem 0 2.5rem 0;
+  color: #333333;
+  font-family: "Catamaran Black";
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.offer-text {
+  display: block;
+  margin: 0 auto 7rem auto;
+  text-align: center;
+  padding: 0.5rem 0 3.5rem 0;
+  max-width: 149.9rem;
+  color: #565656;
+  font-family: Muli;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+  letter-spacing: 0.18px;
+}
+
+.offer-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+
+.offer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20rem;
+}
+
+.offer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.offer-item__image {
+  display: block;
+  position: relative;
+  height: 29rem;
+  margin-bottom: 4.4rem;
+}
+
+.offer-item__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.offer-item__question {
+  text-align: center;
+  display: block;
+  color: #565656;
+  font-family: Muli;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.14px;
+  margin-bottom: 2.4rem;
+}
+
+.offer-item__title-wraper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+}
+
+.offer-item__title {
+  width: 100%;
+  color: #333333;
+  font-family: "Catamaran - Black";
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  margin-bottom: 2.4rem;
+}
+
+.offer-item__btn {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.offer-item__link {
+  color: #fefefe;
+  font-family: Catamaran;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 4rem;
+  border-radius: 6px;
+  background-color: #ff690f;
+  text-transform: uppercase;
+}
+
+.offer-item__link:hover {
+  color: #cecece;
+  background-color: #853300;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .text {

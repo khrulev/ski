@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    var elem = $('.header-image'),         //    Контейнер, в котором будем проводить анимацию
+    var elem = $('.header-image__mountain'),         //    Контейнер, в котором будем проводить анимацию
           pos = elem.offset(),            //    Позиция элемента
           elem_left = pos.left,           //    Слева
           elem_top = pos.top,             //    Сверху
@@ -10,7 +10,7 @@ $(document).ready(function(){
           y_center;    //    Координаты центра по оси Y
     
     //    Обрабатываем событие перемещения курсора мыши
-      $('.header-image').mousemove(function(e){    
+      $('.header-image__mountain').mousemove(function(e){    
     
     //    Определяем центр элемента (формула легко гуглится)
         x_center = ( elem_width / 2 ) - ( e.pageX - elem_left );
@@ -20,8 +20,8 @@ $(document).ready(function(){
         $('.parallax').each(function(){
     
     var speed = $(this).attr('data-speed'),     //    Определяем скорость
-              xPos = Math.round(-1*x_center/20*speed),//    Высчитываем позицию по оси X, движения будут инвертированы (-1). Формула подбиралась на глаз
-              yPos = Math.round(-1*y_center/30*speed);   //    Высчитываем позицию по оси Y
+              xPos = Math.round(-1*x_center/10*speed),//    Высчитываем позицию по оси X, движения будут инвертированы (-1). Формула подбиралась на глаз
+              yPos = Math.round(-1*y_center/10*speed);   //    Высчитываем позицию по оси Y
     
     //    Перемещение по оси Y делаем до определенной точки, потом перемещение останавливаем
     if (yPos < 0)
