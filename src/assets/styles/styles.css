@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 1020;
 }
 
 .header .header-menu:before {
@@ -776,7 +776,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .testimonials-body .slider__item {
   display: block;
-  margin: 0 auto;
+  margin: 0 0;
+  text-align: center;
 }
 
 .testimonials-body .slider__item .slider-item__image {
@@ -819,6 +820,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 3rem;
   letter-spacing: 0.18px;
+  width: 50%;
+}
+
+.testimonials-body .slider__item .slider-item__text-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text {
