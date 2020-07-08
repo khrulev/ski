@@ -421,27 +421,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 // BLOCK #3 (FOTO WALL)
 .wall{
-
+    margin: 0 0 16rem 0;
 }
-// .container{
 
-// }
-.wall-body{
-    // max-width: 1920px;
-
-}
 .wall-row{
     display: flex;
 }
 .wall-column{
     flex: 0 0 33.33%;
-    //flex: 1 1 auto;
     height: 100%;
 }
 .wall-item{
-    // flex: 1 1 auto;
-    // display: flex;
-    // flex-direction: column;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -468,6 +458,271 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
 }
+
+.crew{
+    margin: 0 0 16rem 0;
+}
+// .container{}
+// .crew-body{}
+.crew-row{
+    display: flex;
+    padding: 0 10rem;
+}
+.crew-column{
+    flex: 0 0 25%;
+    height: 100%;
+}
+.crew-item{
+    text-align: center;
+    padding: 0 0 2rem 0;
+    margin: 0 0 2rem 0;
+    &__image{
+        height: 24rem;
+        padding: 0 0 2rem 0;
+        margin: 0 0 2rem 0;
+        img{
+            object-fit: contain;
+            object-position: center;
+            width: 100%;
+            height: 100%;   
+        }
+    }
+
+    &__title{
+        color: #565656;
+        font-family: Muli;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.14px;
+        padding: 0 0 2rem 0;
+        margin: 0 0 2rem 0;
+    }
+    // &__text-wraper{
+
+    // &__offer-item{
+        .offer-item__text{
+            color: #333333;
+            font-family: "Catamaran Black";
+            font-size: 2.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.24px;
+        }
+    // }
+    // }
+}
+//NUMBERS (ACHIEVEMENTS)
+.numbers{
+    position: relative;
+    padding: 25rem 0;
+    // margin: 0 0 16rem 0;
+    &__image{
+        overflow: hidden;
+        height: 100%;
+        img{
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+            top:0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }}
+
+.numbers-body{
+    padding: 0 20rem;
+}
+.numbers-title{
+    width: 50%;
+    color: #2f2f2f;
+    font-family: "Catamaran Black";
+    font-size: 6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 0 0 6rem 0;
+}
+.numbers-text{
+    width: 60%;
+    color: #2b2b2b;
+    font-family: Muli;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+    letter-spacing: 0.18px;
+    margin: 0 0 6rem 0;
+}
+.numbers-row{
+    display: flex;
+    width: 70%;
+    
+}
+.numbers-column{
+    flex: 0 0 33%
+}
+.numbers-item{
+    &__title{
+        color: #ff690f;
+        font-family: "Catamaran Black";
+        font-size: 6.4rem;
+        font-weight: 900;
+        letter-spacing: 0.64px;
+        
+    }
+    &__text{
+        color: #2b2b2b;
+        font-family: "Muli - Semi Bold";
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+    }
+}
+
+//Testimonials + slider
+.testimonials{
+    background-color: #f6f6f6;
+    padding: 14rem 0;  
+}
+
+.testimonials-body{
+    display: block;
+    margin: 0 auto; 
+
+}
+
+.testimonials-title{
+    display: block;
+    text-align: center;
+
+    color: #333333;
+    font-family: "Catamaran Black";
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 0 0 6rem 0;
+}
+// .testimonials-slider{}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    padding: 0 0 6rem 0;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+.testimonials-body{
+    // .slick-arrow{
+    //     display: none !important;
+    // }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slick-dots li{
+        list-style: none;
+        margin: 0 10px;
+    }
+    // /* Активная точка */
+    .slick-dots li.slick-active button{
+        background-color: #ff660d;
+    }
+    // /* Элемент точки */
+    .slick-dots li button{
+        font-size: 0;
+        width: 13px;
+        height: 13px;
+        color:#cdd4db;;
+        border-radius: 50%;
+        &:hover{
+            background-color: #ff660d;
+        }
+ 
+    }
+
+    .slider__item{
+        display: block;
+        margin: 0 auto;
+
+        .slider-item__image{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0 0 6rem 0;
+        }
+
+        .slider-item__title{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0 0 2rem 0;
+            width: 100%;
+
+            color: #333333;
+            font-family: "Catamaran Black";
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: uppercase;      
+            letter-spacing: 0.18px;
+        }
+
+        .slider-item__text{
+            color: #565656;
+            font-family: Muli;
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 3rem;
+            letter-spacing: 0.18px;
+        }
+
+
+
+    }
+
+    
+
+}
+
 
 
 // TEST

@@ -8,4 +8,10 @@ $(document).ready(function(){
     $('.header__list').click(function(event) {
         $('.header__burger,.header__menu').removeClass('active');
         $('body').removeClass('lock');})
+        
+    $('.slider').slick(
+        {arrows: false, dots: true, fade: true}
+    );
 })
+
+
