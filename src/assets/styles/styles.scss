@@ -226,8 +226,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
                 line-height: 30rem;
             }
         }
-       
-
     }
 
     // MENU - BURGER
@@ -481,15 +479,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
     &__link{
-        // text-align: center;
-  
-        // width: 75px;
-        // height: 15px;
         color: #fefefe;
         font-family: Catamaran;
         font-size: 2rem;
         font-weight: 700;
-        // line-height: 90px;
         padding: 2rem 4rem; 
         border-radius: 6px;
         background-color: #ff690f;
@@ -499,8 +492,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-color: #853300;
             transition: all 0.2s ease 0s;
         }
-
-
     }
 }
 @media (max-width: $sm2) {
@@ -508,8 +499,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         font-size: 10rem;
     }
 }
-
-
 
 // BLOCK #3 (FOTO WALL)
 .wall{
@@ -575,8 +564,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .crew{
     margin: 0 0 16rem 0;
 }
-// .container{}
-// .crew-body{}
+
 .crew-row{
     display: flex;
     padding: 0 10rem;
@@ -679,11 +667,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
 }
+
 //NUMBERS (ACHIEVEMENTS)
 .numbers{
     position: relative;
     padding: 25rem 0;
-    // margin: 0 0 16rem 0;
     &__image{
         overflow: hidden;
         height: 100%;
@@ -727,7 +715,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         text-align: center;
     }
 }
-
 
 .numbers-text{
     width: 60%;
@@ -787,7 +774,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 @media (max-width: $sm2) {
     .numbers-column {
-        // font-size: 8rem;
         padding: 20px 0;
     }
 }
@@ -797,7 +783,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         padding: 20px 0;
     }
 }
-
 
 .numbers-item{
     &__title{
@@ -998,12 +983,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 //Contact us
 .constacts{
-    // background-color: #333333;
     background-color: #262f3d
 }
 .constacts-body{
     display: flex;
-    // height: 70rem;
 }
 @media (max-width: $sm2) {
     .constacts-body {
@@ -1078,7 +1061,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-image: url(../images/contacts/01.png);
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-right: 1 rem;
+            // margin-right: 1rem;
         }
 
         &.ico_map::before{
@@ -1090,7 +1073,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-image: url(../images/contacts/02.png);
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-right: 1 rem;
+            // margin-right: 1rem;
         }
 
 
@@ -1103,7 +1086,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-image: url(../images/contacts/03.png);
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-right: 1 rem;
+            // margin-right: 1rem;
         }
 
         &.ico_hours::before{
@@ -1115,7 +1098,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-image: url(../images/contacts/04.png);
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-right: 1 rem;
+            // margin-right: 1rem;
         }
 
         &.ico_twitter::before{
@@ -1126,7 +1109,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-image: url(../images/contacts/05.png);
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-right: 1 rem;
+            // margin-right: 1rem;
         }
 
         &.ico_facebook::before{
@@ -1137,7 +1120,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-image: url(../images/contacts/06.png);
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-right: 1 rem;
+            // margin-right: 1rem;
         }
 
         &.ico_instagram::before{
@@ -1148,16 +1131,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background-image: url(../images/contacts/07.png);
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-right: 1 rem;
+            // margin-right: 1rem;
         }
 
 
     }
 
-    // @media (max-width: $sm2) {
-
-    // }
-    
     @media (max-width: $xs2) {
         &__text{
              font-size: 6rem;
@@ -1208,8 +1187,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     
         }
     }
-
-
 
     .social{
         display: flex;
