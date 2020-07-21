@@ -1,17 +1,28 @@
 {
   "name": "sky",
+  "homepage": "https://khrulev.github.io/ski-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copyfonts": "copyfiles -f scr/assets/fonts/* dist/fonts",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin scr/assets/images/* --out-dir='dist/scr/img'",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "jquery": "^3.5.1"
