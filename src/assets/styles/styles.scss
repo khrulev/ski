@@ -1,3 +1,10 @@
+//*Breakpoints*/
+$xs2: 575.98px;
+$sm2: 767.98px;
+$md2: 991.98px;
+$lg2: 1199.98px;
+$xl:  1921.98px;
+
 /*Default Styles Reset*/
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
@@ -32,11 +39,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     body.lock{ //lock scroll (burger transformation)
         overflow: hidden;
     }
+
 }
 
 .header{
     background-image: url('../images/header_background.jpg');
     position: relative;
+    overflow: hidden;
   
     .header-menu {
         position: fixed;
