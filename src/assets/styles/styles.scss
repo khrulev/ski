@@ -109,11 +109,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         // max-height: 1079px;
         padding-top: 16.8rem;
 
-        .cotent{
+        .content{
             max-width: 1260px;
             margin: 0 auto;
         }
-
+        @media (max-width: $sm2) {
+            .content{ 
+                // padding: 45px 10px 0 10px;
+            }
+        }
+        @media (max-width: $xs2) {
+            .content{ 
+                padding: 45px 10px 0 10px;
+            }
+        }
+    
         .content__type{
             text-align: center;
             color: #7fa4c4;
@@ -126,6 +136,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             
         }
 
+
+        @media (max-width: $md2) {
+            .content__text{
+                padding: 10px 0;
+                font-size: 4rem !important;
+                line-height: 6rem !important;
+            }
+
+        }
+
         @media (max-width: $sm2) {
             .content__type{ 
                 padding-top: 12rem; 
@@ -135,9 +155,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         }
 
         @media (max-width: $xs2) {
-            .content__type{ 
-                padding-top: 17rem; 
-                font-size: 12px;
+            .content__type{
+                display: none; 
+                // padding-top: 17rem; 
+                // font-size: 12px;
                    
             }
 
@@ -146,8 +167,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             }
 
             .content__text{
-                font-size: 14px !important;
-                line-height: 20px !important;
+                padding: 10px 0;
+                font-size: 10rem !important;
+                line-height: 14.2rem !important;
             }
 
             .content__info{
@@ -195,7 +217,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         width: 70rem;
         position: relative;
         z-index: 10;
-        padding: 10rem 0 38rem 0;
+        padding: 2rem 0 38rem 0;
         .content__text{
             color: #fefefe;
             font-family: Muli;
@@ -222,11 +244,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         }
         @media (max-width: $md2) {
             .content__link {
-                font-size: 12px;
-                line-height: 30rem;
+                font-size: 14px;
+                line-height: 20rem;
+                padding: 3rem 10rem;
             }
         }
     }
+
+    @media (max-width: $md2) {
+        .content__info{
+            width: 100rem;
+        }
+    }
+    
+
 
     // MENU - BURGER
     .header__burger {
@@ -386,12 +417,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 @media (max-width: $sm2) {
-
     .offer-text{
+        text-align: justify;
+        font-size: 4rem;
+        line-height: 8rem;
+    }
+}
+
+@media (max-width: $xs2) {
+    .offer-text{
+        text-align: justify;
         font-size: 10rem;
         line-height: 14.2rem;
     }
 }
+
+
 
 .offer-column{
     flex: 0 0 33.33%
@@ -437,7 +478,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     
     @media (max-width: $sm2){
         &__image{
-            height: 90rem;
+            height: 70rem;
+        }
+    }
+
+    @media (max-width: $xs2){
+        &__image{
+            height: 100rem;
         }
     }
 
@@ -495,14 +542,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 }
 @media (max-width: $sm2) {
-    .offer-item__link, .offer-item__title, .offer-item__question{
-        font-size: 10rem;
+    .offer-item__link, .offer-item__title{
+        font-size: 4rem;
+    }
+    .offer-item__question{
+        font-size: 3rem;
     }
 }
 
 // BLOCK #3 (FOTO WALL)
 .wall{
-    margin: 0 0 16rem 0;
+    margin: 0 0 30px 0;
 }
 
 .wall-row{
@@ -563,6 +613,25 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 .crew{
     margin: 0 0 16rem 0;
+}
+
+.crew-title{
+    text-align: center;
+    padding: 10rem 0 2.5rem 0;
+    color: #333333;
+    font-family: "Catamaran Black";
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+@media (max-width: $sm2) {
+    .crew-title{
+        font-size: 14rem;
+        line-height: 20rem;
+    }
 }
 
 .crew-row{
@@ -729,10 +798,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 @media (max-width: $sm2) {
     .numbers-text {
-        font-size: 8rem;
-        line-height: 10rem;
+        font-size: 4rem;
+        line-height: 8rem;
         width: 100%;
-        text-align: center;
+        text-align: start;
     }
 }
 
@@ -741,7 +810,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         font-size: 10rem;
         line-height: 20rem;
         width: 100%;
-        text-align: center;
+        text-align: justify;
     }
 }
 .numbers-row{
@@ -988,12 +1057,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .constacts-body{
     display: flex;
 }
-@media (max-width: $sm2) {
-    .constacts-body {
-        display: block;
-        width: 100%;
-    }
-}
+// @media (max-width: $sm2) {
+//     .constacts-body {
+//         // display: block;
+//         width: 60%;
+//     }
+// }
 
 @media (max-width: $xs2) {
     .constacts-body {
@@ -1001,6 +1070,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         width: 100%;
     }
 }
+
+.constacts-item__map, #map {
+    height: 100%;  
+    width: 100%;  
+   }
 
 .constacts-column__info{
     flex: 0 0 33%;
@@ -1027,7 +1101,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
     @media (max-width: $sm2) {
         &__title {
-            font-size: 5rem;
+            font-size: 8rem;
             line-height: 10rem;
             text-align: center;
         }
@@ -1058,7 +1132,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             height: 2rem;  
             width: 4rem;
             margin: 0 0 0 -4rem;
-            background-image: url(../images/contacts/01.png);
+            background-image: url(../images/contacts/contacts01.png);
             background-size: contain;
             background-repeat: no-repeat;
             // margin-right: 1rem;
@@ -1070,7 +1144,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             height: 2rem;  
             width: 4rem;
             margin: 0 0 0 -4rem;
-            background-image: url(../images/contacts/02.png);
+            background-image: url(../images/contacts/contacts02.png);
             background-size: contain;
             background-repeat: no-repeat;
             // margin-right: 1rem;
@@ -1083,7 +1157,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             height: 2rem;  
             width: 4rem;
             margin: 0 0 0 -4rem;
-            background-image: url(../images/contacts/03.png);
+            background-image: url(../images/contacts/contacts03.png);
             background-size: contain;
             background-repeat: no-repeat;
             // margin-right: 1rem;
@@ -1095,7 +1169,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             height: 2rem;  
             width: 4rem;
             margin: 0 0 0 -4rem;
-            background-image: url(../images/contacts/04.png);
+            background-image: url(../images/contacts/contacts04.png);
             background-size: contain;
             background-repeat: no-repeat;
             // margin-right: 1rem;
@@ -1106,7 +1180,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             display: inline-block;  
             height: 3rem;  
             width: 3rem;
-            background-image: url(../images/contacts/05.png);
+            background-image: url(../images/contacts/contacts05.png);
             background-size: contain;
             background-repeat: no-repeat;
             // margin-right: 1rem;
@@ -1117,7 +1191,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             display: inline-block;  
             height: 3rem;  
             width: 3rem;
-            background-image: url(../images/contacts/06.png);
+            background-image: url(../images/contacts/contacts06.png);
             background-size: contain;
             background-repeat: no-repeat;
             // margin-right: 1rem;
@@ -1128,13 +1202,64 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             display: inline-block;  
             height: 3rem;  
             width: 3rem;
-            background-image: url(../images/contacts/07.png);
+            background-image: url(../images/contacts/contacts07.png);
             background-size: contain;
             background-repeat: no-repeat;
             // margin-right: 1rem;
         }
 
 
+    }
+
+    @media (max-width: $sm2) {
+        &__text{
+             font-size: 3rem;
+             line-height: 4rem;
+
+            &.ico_tel::before{
+                height: 3rem;  
+                width: 10rem;
+                margin: 0 0 0 -10rem;
+            }
+    
+            &.ico_map::before{
+                height: 3rem;  
+                width: 10rem;
+                margin: 0 0 0 -10rem;
+            }
+    
+            &.ico_email::before{
+                height: 3rem;  
+                width: 10rem;
+                margin: 0 0 0 -10rem;
+            }
+    
+            &.ico_hours::before{
+                height: 3rem;  
+                width: 10rem;
+                margin: 0 0 0 -10rem;
+            }
+    
+            &.ico_twitter::before{
+                height: 3rem;  
+                width: 10rem;
+                margin: 0 0 0 -10rem;
+            }
+    
+            &.ico_facebook::before{
+                height: 3rem;  
+                width: 10rem;
+                margin: 0 0 0 -10rem;
+            }
+    
+            &.ico_instagram::before{
+                height: 3rem;  
+                width: 10rem;
+                margin: 0 0 0 -10rem;
+            }
+    
+    
+        }
     }
 
     @media (max-width: $xs2) {
@@ -1227,10 +1352,5 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             overflow: hidden;
         }
     }
-
-    #map {
-        height: 100%;  
-        width: 100%;  
-       }
-    
+  
 }

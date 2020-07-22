@@ -1,5 +1,5 @@
 {
-  "name": "sky",
+  "name": "ski",
   "homepage": "https://khrulev.github.io/ski-demo",
   "version": "1.0.0",
   "description": "",
@@ -10,11 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "copyfonts": "copyfiles -f src/assets/fonts/* dist/fonts",
     "clean": "rimraf dist",
-    "imagemin": "imagemin src/assets/images/* --out-dir='dist/src/img'",
+    "imagemin": "imagemin src/assets/images/* --out-dir='dist/img'",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
-  "author": "",
+  "author": "Ivan K.",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.5.4",
