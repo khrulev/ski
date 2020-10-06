@@ -1,8 +1,11 @@
 /*Default Styles Reset*/
 @import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap"); 
+
 * {
   padding: 0;
   margin: 0;
@@ -102,6 +105,9 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../images/header_background.jpg");
   position: relative;
   overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header .header-menu {
@@ -273,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .content__info .content__text {
   color: #fefefe;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 3.4rem;
   font-weight: 400;
   line-height: 5rem;
@@ -408,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #f6f6f6;
   text-decoration: none;
   color: #ffffff;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 90px;
@@ -458,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 0 3.5rem 0;
   max-width: 149.9rem;
   color: #565656;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 3.2rem;
@@ -555,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   display: block;
   color: #565656;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -783,7 +789,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .crew-item__title {
   color: #565656;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -880,7 +886,7 @@ h1, h2, h3, h4, h5, h6 {
 .numbers-text {
   width: 60%;
   color: #2b2b2b;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 3.2rem;
@@ -971,7 +977,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .numbers-item__text {
   color: #2b2b2b;
-  font-family: "Muli - Semi Bold";
+  font-family: 'Mulish', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.4rem;
@@ -1130,7 +1136,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .testimonials-body .slider__item .slider-item__text {
   color: #565656;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 3rem;
@@ -1232,7 +1238,7 @@ h1, h2, h3, h4, h5, h6 {
 .constacts-item__text {
   display: block;
   color: #f7f7f7;
-  font-family: Muli;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.6rem;
@@ -1437,7 +1443,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
 }
-/*# sourceMappingURL=styles.css.map */
+
+#Contact a:hover{
+  opacity: 0.6;
+}
